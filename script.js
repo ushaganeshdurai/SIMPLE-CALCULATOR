@@ -1,4 +1,5 @@
 let str = "";
+let clr = document.getElementById('ac');
 let res = document.querySelector('#result');
 let buttons = document.querySelectorAll('.button');
 Array.from(buttons).forEach((button)=>{
@@ -16,6 +17,9 @@ Array.from(buttons).forEach((button)=>{
         document.querySelector('input').value=str;
         }   
     })
+ })
+ clr.addEventListener('click',()=>{
+    location.reload();
  })
 // let play = document.querySelector('#play');
 // play.addEventListener('click',()=>{
